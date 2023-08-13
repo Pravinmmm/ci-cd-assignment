@@ -4,6 +4,14 @@ pipeline {
     gradle "Gradle_1"
     }
     stages {        
+         stage('backend run') {
+            steps {
+                echo 'Running graddel'
+                withGrdel(){
+                sh './gradlew -v'
+                }
+            }
+        }
         stage('Build') {
             steps {
                 echo 'Running build automation'
