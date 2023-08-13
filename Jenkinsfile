@@ -1,7 +1,11 @@
 pipeline {
     agent any   
     stages {
-        
+         stage("run frondend"){
+              echo 'executing yarn'
+                nodejs('node_12.13.1'){
+                    sh 'yarn install'
+         }
         stage('Build') {
             steps {
                 echo 'Running build automation'
