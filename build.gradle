@@ -11,7 +11,6 @@ node {
     npmVersion = ""    
     yarnVersion = ""
     distBaseUrl = "https://nodejs.org/dist"
-    allowInsecureProtocol = null
     npmInstallCommand = "install"
 
     // The directory where Node.js is unpacked (when download is true)
