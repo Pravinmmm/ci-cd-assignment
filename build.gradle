@@ -49,7 +49,7 @@ task zip(type: Zip) {
 		include "views/**"
 	}
 	destinationDirectory = (file("dist"))
-	archiveBaseName  "trainSchedule"
+	archiveBaseName = "trainSchedule"
 }
 
 //declare task dependencies
