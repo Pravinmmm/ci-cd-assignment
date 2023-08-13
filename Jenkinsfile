@@ -1,20 +1,12 @@
 pipeline {
     agent any   
     stages {
-        stage("run frondend"){
+        
+        stage('Build') {
             steps {
-                echo 'executing yarn'
-                nodejs('node_10_17'){
-                    sh 'yarn install'
-                }
-            }
-        }
-        stage("run backdend"){
-            steps {
-                echo 'executing gradle'
-                withGradle(){
-                    sh './gradlew -v'
-                }
+                echo 'Running build automation'
+                sh './gradlew build --no-daemon'
+                archiveArtifacts artifacts: 'dist/trainSchedule.zip'
             }
         }
                    
