@@ -6,6 +6,7 @@ pipeline {
                 nodejs('node_12.13.1'){
                     sh 'yarn install'
          }
+         }
         stage('Build') {
             steps {
                 echo 'Running build automation'
