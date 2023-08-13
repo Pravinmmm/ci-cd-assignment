@@ -31,7 +31,7 @@ node {
     // according the proxy configuration defined for Gradle
     // Disable this option if you want to configure the proxy for npm or yarn on your own
     // (in the .npmrc file for instance)
-    nodeProxySettings = ProxySettings.SMART
+    //nodeProxySettings = ProxySettings.SMART
 }
 
 //declare a build task
