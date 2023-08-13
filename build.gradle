@@ -7,7 +7,7 @@ plugins {
 
 node {
     download = true
-    version = "16.14.0"
+    version = "10.12.1"
     npmVersion = "8.3.1"    
     yarnVersion = ""
     distBaseUrl = "https://nodejs.org/dist"
