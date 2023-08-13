@@ -1,7 +1,9 @@
 pipeline {
-    agent any   
-    stages {
-        
+    agent any
+    tools {
+    gradle "Gradle_1"
+    }
+    stages {        
         stage('Build') {
             steps {
                 echo 'Running build automation'
