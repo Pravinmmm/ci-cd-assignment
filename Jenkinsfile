@@ -3,15 +3,7 @@ pipeline {
     tools {
     gradle "Gradle_1"
     }
-    stages {        
-         stage('backend run') {
-            steps {
-                echo 'Running graddel'
-                withGradle(){
-                sh './gradlew -v'
-                }
-            }
-        }
+    stages {
         stage('Build') {
             steps {
                 echo 'Running build automation'
