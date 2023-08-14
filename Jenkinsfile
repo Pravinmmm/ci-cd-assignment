@@ -2,9 +2,21 @@ pipeline {
     agent any
     environment {
         //be sure to replace "bhavukm" with your own Docker Hub username
-        DOCKER_IMAGE_NAME = "bhavukm/train-schedule"
+        // DOCKER_IMAGE_NAME = "bhavukm/train-schedule"
     }
     stages {
+         stage('Build and Test') {
+              tools {
+                // Configure the Node.js and npm installations
+                nodejs "14.15.4"
+                npm "6.14.10"
+                gradle 'gradle-6.8.3'
+            }
+            steps {
+                // Install dependencies using npm
+                sh 'npm install'                
+            }
+         }
         stage('Build') {
             steps {
                 echo 'Running build automation'
