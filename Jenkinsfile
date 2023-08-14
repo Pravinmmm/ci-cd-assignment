@@ -13,6 +13,7 @@ pipeline {
             }
             steps {
                 // Install dependencies using npm
+                tool 'Node.js'
                 sh 'npm install'                
             }
          }
