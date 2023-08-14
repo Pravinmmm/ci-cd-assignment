@@ -6,8 +6,8 @@ plugins {
 
 node {
     download = true
-    version = "12.18.2"
-    npmVersion = "5.6.0"    
+    version = "14.15.4"
+    npmVersion = "14.15.4"    
     distBaseUrl = "https://nodejs.org/dist"
     // npmInstallCommand = "install"
 
