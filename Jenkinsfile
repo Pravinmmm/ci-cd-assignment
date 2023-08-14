@@ -9,12 +9,14 @@ pipeline {
               tools {
                 // Configure the Node.js and npm installations
                 nodejs "my_node"
-                  npm '6.14.10'
                 gradle 'Gradle_1'
             }
             steps {
                 // Install dependencies using npm
-                sh 'npm install'                
+                sh 'npm install'   
+                 // Build and test your application using npm and Gradle
+                sh 'npm run build'
+                sh 'gradle test'
             }
          }
         stage('Build') {
