@@ -9,7 +9,7 @@ pipeline {
               tools {
                 // Configure the Node.js and npm installations
                 nodejs "my_node"
-                gradle 'Gradle_1'
+                gradle 'my_gradle'
             }
             steps {
                 // Install dependencies using npm
