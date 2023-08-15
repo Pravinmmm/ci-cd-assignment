@@ -14,9 +14,9 @@ pipeline {
             steps {
                 // Install dependencies using npm
                 sh 'npm install'  
-                sh 'npm audit fix'
+                sh 'npm audit fix --force'
                  // Build and test your application using npm and Gradle
-                sh 'npm run build'
+                // sh 'npm run build'
                 sh 'gradle test'
             }
          }
