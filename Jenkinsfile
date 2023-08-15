@@ -5,21 +5,7 @@ pipeline {
         DOCKER_IMAGE_NAME = "bhavukm/train-schedule"
     }
     stages {
-         stage('Build and Test') {
-              tools {
-                // Configure the Node.js and npm installations
-                nodejs "my_node"
-                gradle 'my_gradle'
-            }
-            steps {
-                // Install dependencies using npm
-                sh 'npm install'  
-                sh 'npm audit fix --force'
-                 // Build and test your application using npm and Gradle
-                // sh 'npm run build'
-                sh 'gradle test'
-            }
-         }
+         
         stage('Build') {
             steps {
                 echo 'Running build automation'
