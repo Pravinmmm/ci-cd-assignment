@@ -54,8 +54,10 @@ task zip(type: Zip) {
 
 //declare task dependencies
 build.dependsOn zip
-zip.dependsOn npm_run_build
-npm_run_build.dependsOn npm_test
+zip.dependsOn npm_build
+npm_build.dependsOn npm_test
 npm_test.dependsOn npmInstall
-npm_run_build.dependsOn npmInstall
-npm_run_build.dependsOn npmInstall
+npm_build.dependsOn npmInstall
+npm_build.dependsOn npmInstall
+npm_build.dependsOn npm_help
+
