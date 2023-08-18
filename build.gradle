@@ -8,7 +8,7 @@ node {
     download = true
     // version = "14.17.0"
     // npmVersion = "7.8.0"  
-    version = "8.10.0"
+    version = "14.17.0"
     distBaseUrl = "https://nodejs.org/dist"
 }
 
