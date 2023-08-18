@@ -39,5 +39,5 @@ npm_build.dependsOn npm_test
 npm_test.dependsOn npmInstall
 npm_build.dependsOn npmInstall
 npm_build.dependsOn npmInstall
-npm_build.dependsOn npm_help
+//npm_build.dependsOn npm_help
 
